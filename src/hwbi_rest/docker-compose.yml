@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  hwbi_rest:
+    image: hwbi_rest
+    build:
+      context: .
+      dockerfile: Dockerfile

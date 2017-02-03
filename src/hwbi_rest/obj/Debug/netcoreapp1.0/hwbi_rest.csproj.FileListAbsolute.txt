@@ -1,0 +1,18 @@
+E:\Visual Studio 2017\Core\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.deps.json
+E:\Visual Studio 2017\Core\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.runtimeconfig.json
+E:\Visual Studio 2017\Core\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.runtimeconfig.dev.json
+E:\Visual Studio 2017\Core\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.dll
+E:\Visual Studio 2017\Core\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.pdb
+E:\Visual Studio 2017\Core\hwbi_rest\src\hwbi_rest\obj\Debug\netcoreapp1.0\hwbi_rest.AssemblyInfo.cs
+E:\Visual Studio 2017\Core\hwbi_rest\src\hwbi_rest\obj\Debug\netcoreapp1.0\hwbi_rest.dll
+E:\Visual Studio 2017\Core\hwbi_rest\src\hwbi_rest\obj\Debug\netcoreapp1.0\hwbi_rest.pdb
+E:\Visual Studio 2017\Core\hwbi_rest\src\hwbi_rest\obj\Debug\netcoreapp1.0\hwbi_rest.csprojResolveAssemblyReference.cache
+E:\GitHub\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.deps.json
+E:\GitHub\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.runtimeconfig.json
+E:\GitHub\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.runtimeconfig.dev.json
+E:\GitHub\hwbi_rest\src\hwbi_rest\obj\Debug\netcoreapp1.0\hwbi_rest.AssemblyInfo.cs
+E:\GitHub\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.dll
+E:\GitHub\hwbi_rest\src\hwbi_rest\bin\Debug\netcoreapp1.0\hwbi_rest.pdb
+E:\GitHub\hwbi_rest\src\hwbi_rest\obj\Debug\netcoreapp1.0\hwbi_rest.dll
+E:\GitHub\hwbi_rest\src\hwbi_rest\obj\Debug\netcoreapp1.0\hwbi_rest.pdb
+E:\GitHub\hwbi_rest\src\hwbi_rest\obj\Debug\netcoreapp1.0\hwbi_rest.csprojResolveAssemblyReference.cache
