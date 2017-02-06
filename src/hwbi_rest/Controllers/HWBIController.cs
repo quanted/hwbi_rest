@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.PlatformAbstractions;
 using hwbi_rest.Models;
 
 namespace hwbi_rest.Controllers
@@ -104,7 +105,11 @@ namespace hwbi_rest.Controllers
         [HttpPost]
         public Models.HWBIScore PostLocationsRun([FromBody]Location location)
         {
-            //SetBaseUrl(this.Request);
+            Microsoft.Extensions.PlatformAbstractions.ApplicationEnvironment appEnv = new ApplicationEnvironment();
+            string basePath = appEnv.ApplicationBasePath;
+            string dbPath = System.IO.Path.Combine(basePath, "Data");
+
+            string connStr = string.Format("Filename={0}hwbi.db; Mode=ReadOnly", dbPath);
             Models.HWBIScore hwbiScore = new Models.HWBIScore(location.state, location.county);
             return hwbiScore;
         }
