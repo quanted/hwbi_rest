@@ -7,15 +7,23 @@ using System.IO;
 using Microsoft.Extensions.PlatformAbstractions;
 using hwbi_rest.Models.Database;
 using Microsoft.Data.Sqlite;
-using PetaPoco;
 
 namespace hwbi_rest.Models
 {
     public class SqliteMgr
     {
-
-        string _dbFile = "";
+        
         private static string connectionString = "Filename=./hwbi.db; Mode=ReadOnly";
+
+        private static string GetConnectionString()
+        {
+            Microsoft.Extensions.PlatformAbstractions.ApplicationEnvironment appEnv = new ApplicationEnvironment();
+            string basePath = appEnv.ApplicationBasePath;
+            string dbPath = System.IO.Path.Combine(basePath, "Data");
+
+            string connStr = string.Format("Filename={0}hwbi.db; Mode=ReadOnly", dbPath);
+            return connStr;
+        }
 
         public SqliteMgr()
         {
@@ -236,11 +244,11 @@ namespace hwbi_rest.Models
 
             public void ExecuteNonQuery(string query)
         {
-            SqliteConnection connection = new SqliteConnection(connectionString);
-            var db = new PetaPoco.NetCore.Database(connection);
-            db.Execute(query);
+            //SqliteConnection connection = new SqliteConnection(connectionString);
+            //var db = new PetaPoco.NetCore.Database(connection);
+            //db.Execute(query);
 
-            return;
+            //return;
         }
 
 
@@ -249,13 +257,13 @@ namespace hwbi_rest.Models
         /// </summary>
         /// <param name="sql">The query to run.</param>
         /// <returns>A string.</returns>
-        public long ExecuteScalar(string query)
-        {
-            SqliteConnection connection = new SqliteConnection(connectionString);
-            var db = new PetaPoco.NetCore.Database(connection);
-            long retval = db.ExecuteScalar<long>(query);
-            return retval;            
-        }
+        //public long ExecuteScalar(string query)
+        //{
+        //    SqliteConnection connection = new SqliteConnection(connectionString);
+        //    var db = new PetaPoco.NetCore.Database(connection);
+        //    long retval = db.ExecuteScalar<long>(query);
+        //    return retval;            
+        //}
 
     }
 }
