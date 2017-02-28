@@ -1,6 +1,5 @@
-FROM microsoft/aspnetcore:1.0.1
-ARG source
+FROM microsoft/aspnetcore:1.1.0
 WORKDIR /app
 EXPOSE 80
-COPY ${source:-bin/Release/PublishOutput} .
+COPY . .
 ENTRYPOINT ["dotnet", "hwbi_rest.dll"]
