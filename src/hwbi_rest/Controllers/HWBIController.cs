@@ -10,7 +10,7 @@ namespace hwbi_rest.Controllers
     [Route("rest")]
     public class HWBIController : Controller
     {
-        [Route("hwbi")]
+        //[Route("hwbi")]
         [HttpGet]
         public Models.HWBI GetHWBI()
         {
@@ -20,7 +20,7 @@ namespace hwbi_rest.Controllers
             return hwbi;
         }
 
-        [Route("hwbi/calc")]
+        [Route("calc")]
         [HttpGet]
         public HWBICalc GetCalc()
         {
@@ -29,7 +29,7 @@ namespace hwbi_rest.Controllers
             return calc;
         }
 
-        [Route("hwbi/calc/inputs")]
+        [Route("calc/inputs")]
         [HttpGet]
         public Models.CalcInputs GetCalcInputs()
         {
@@ -38,7 +38,7 @@ namespace hwbi_rest.Controllers
             return calcInputs;
         }
 
-        [Route("hwbi/calc/outputs")]
+        [Route("calc/outputs")]
         [HttpGet]
         public CalcOutputs GetCalcOutputs()
         {
@@ -47,7 +47,7 @@ namespace hwbi_rest.Controllers
             return calcOutputs;
         }
 
-        [Route("hwbi/calc/run")]
+        [Route("calc/run")]
         [HttpGet]
         public CalcRun GetCalcRun()
         {
@@ -56,7 +56,7 @@ namespace hwbi_rest.Controllers
             return calcRun;
         }
 
-        [Route("hwbi/calc/run")]
+        [Route("calc/run")]
         [HttpPost]
         public HWBIScore PostCalcRun([FromBody]HWBICalcScore calcScore)
         {
@@ -65,7 +65,7 @@ namespace hwbi_rest.Controllers
             return score;
         }
 
-        [Route("hwbi/locations")]
+        [Route("locations")]
         [HttpGet]
         public Models.HWBILocations GetLocations()
         {
@@ -74,7 +74,7 @@ namespace hwbi_rest.Controllers
             return locations;
         }
 
-        [Route("hwbi/locations/inputs")]
+        [Route("locations/inputs")]
         [HttpGet]
         public Models.LocationInputs GetLocationsInputs()
         {
@@ -83,7 +83,7 @@ namespace hwbi_rest.Controllers
             return li;
         }
 
-        [Route("hwbi/locations/outputs")]
+        [Route("locations/outputs")]
         [HttpGet]
         public Models.LocationOutputs GetLocationsOutputs()
         {
@@ -92,7 +92,7 @@ namespace hwbi_rest.Controllers
             return lo;
         }
 
-        [Route("hwbi/locations/run")]
+        [Route("locations/run")]
         [HttpGet]
         public Models.LocationRun GetLocationsRun()
         {
@@ -101,7 +101,7 @@ namespace hwbi_rest.Controllers
             return lr;
         }
 
-        [Route("hwbi/locations/run")]
+        [Route("locations/run")]
         [HttpPost]
         public Models.HWBIScore PostLocationsRun([FromBody]Location location)
         {
@@ -190,17 +190,17 @@ namespace hwbi_rest.Controllers
         //    return hwbi;
         //}
 
-        [Route("calc")]
-        [HttpPost]
-        public Models.HWBIScore Post(HWBICalcScore calc)
-        {
-            //Scores scores = calc.scores;
-            //DomainWeights weights = calc.domainWeights;
-            HWBIScore hwbi = new HWBIScore(calc);            
+        //[Route("calc")]
+        //[HttpPost]
+        //public Models.HWBIScore Post(HWBICalcScore calc)
+        //{
+        //    //Scores scores = calc.scores;
+        //    //DomainWeights weights = calc.domainWeights;
+        //    HWBIScore hwbi = new HWBIScore(calc);            
 
-            //hwbi.metaInfo.url = this.Request.RequestUri.ToString();
-            return hwbi;
-        }
+        //    //hwbi.metaInfo.url = this.Request.RequestUri.ToString();
+        //    return hwbi;
+        //}
 
         //// PUT: api/HWBI/5
         //public void Put(int id, [FromBody]string value)
