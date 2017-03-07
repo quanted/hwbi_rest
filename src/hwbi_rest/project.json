@@ -1,4 +1,4 @@
-﻿﻿{
+﻿{
   "dependencies": {
     "Microsoft.NETCore.App": "1.1.1",
     "Microsoft.AspNetCore.Mvc": "1.1.2",
@@ -12,13 +12,12 @@
     "Microsoft.Extensions.Logging.Console": "1.1.1",
     "Microsoft.Extensions.Logging.Debug": "1.1.1",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.1",
-    "System.Data.SQLite.Core": "1.0.104"
+    "System.Data.SQLite.Core": "1.0.102",
+    "System.Data.SQLite": "1.0.102"
   },
-
   "tools": {
     "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"
   },
-
   "frameworks": {
     "netcoreapp1.1": {
       "imports": [
@@ -27,22 +26,18 @@
       ]
     }
   },
-
   "runtimes": {
     "rhel.7.2-x64": {}
   },
-
   "buildOptions": {
     "emitEntryPoint": true,
     "preserveCompilationContext": true
   },
-
   "runtimeOptions": {
     "configProperties": {
       "System.GC.Server": true
     }
   },
-
   "publishOptions": {
     "include": [
       "wwwroot",
@@ -51,7 +46,6 @@
       "web.config"
     ]
   },
-
   "scripts": {
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
   }
