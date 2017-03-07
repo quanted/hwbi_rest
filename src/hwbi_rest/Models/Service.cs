@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Data;
 using hwbi_rest.Models;
 
 namespace hwbi_rest.Models
