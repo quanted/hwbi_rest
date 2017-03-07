@@ -7,6 +7,7 @@
   <ItemGroup>
     <Compile Remove="Controllers\BaselineController.cs" />
     <Compile Remove="Controllers\BaselineServiceScoresController.cs" />
+    <Compile Remove="Controllers\ValuesController.cs" />
     <Compile Remove="Models\DB.cs" />
   </ItemGroup>
   <ItemGroup>
